@@ -7,3 +7,11 @@ C:\UCParking22\UCP.App\UCP.App.Dominio\bin\Debug\netstandard2.0\UCP.App.Dominio.
 C:\UCParking22\UCP.App\UCP.App.Dominio\bin\Debug\netstandard2.0\UCP.App.Dominio.pdb
 C:\UCParking22\UCP.App\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.dll
 C:\UCParking22\UCP.App\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\bin\Debug\netstandard2.0\UCP.App.Dominio.deps.json
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\bin\Debug\netstandard2.0\UCP.App.Dominio.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\bin\Debug\netstandard2.0\UCP.App.Dominio.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.csprojAssemblyReference.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.AssemblyInfo.cs
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Dominio\obj\Debug\netstandard2.0\UCP.App.Dominio.pdb

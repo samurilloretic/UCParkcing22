@@ -10,6 +10,6 @@ namespace UCP.App.Dominio
         camioneta,
         bus,
         buseta,
-        tren
+        Monopatin
     }
 }

@@ -10,3 +10,14 @@ C:\UCParking22\UCP.App\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Per
 C:\UCParking22\UCP.App\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.csproj.CopyComplete
 C:\UCParking22\UCP.App\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.dll
 C:\UCParking22\UCP.App\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\bin\Debug\netstandard2.1\UCP.App.Persistencia.deps.json
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\bin\Debug\netstandard2.1\UCP.App.Persistencia.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\bin\Debug\netstandard2.1\UCP.App.Persistencia.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\bin\Debug\netstandard2.1\UCP.App.Dominio.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\bin\Debug\netstandard2.1\UCP.App.Dominio.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.AssemblyInfo.cs
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.csproj.CopyComplete
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Persistencia\obj\Debug\netstandard2.1\UCP.App.Persistencia.pdb

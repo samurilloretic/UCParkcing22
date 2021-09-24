@@ -66,3 +66,8 @@ C:\UCParking22\UCP.App\UCP.App.Consola\bin\Debug\netcoreapp3.1\UCP.App.Dominio.d
 C:\UCParking22\UCP.App\UCP.App.Consola\bin\Debug\netcoreapp3.1\UCP.App.Persistencia.dll
 C:\UCParking22\UCP.App\UCP.App.Consola\bin\Debug\netcoreapp3.1\UCP.App.Persistencia.pdb
 C:\UCParking22\UCP.App\UCP.App.Consola\bin\Debug\netcoreapp3.1\UCP.App.Dominio.pdb
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Consola\obj\Debug\netcoreapp3.1\UCP.App.Consola.csprojAssemblyReference.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Consola\obj\Debug\netcoreapp3.1\UCP.App.Consola.AssemblyInfoInputs.cache
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Consola\obj\Debug\netcoreapp3.1\UCP.App.Consola.AssemblyInfo.cs
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Consola\obj\Debug\netcoreapp3.1\UCP.App.Consola.dll
+C:\Users\HUMBERTO\Documents\Daniel´s Documents\MISION TIC 2022\Desarrollo software\UCParking\UCParkcing22\UCP.App.Consola\obj\Debug\netcoreapp3.1\UCP.App.Consola.pdb

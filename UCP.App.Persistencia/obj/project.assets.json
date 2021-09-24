@@ -7263,40 +7263,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samur\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\HUMBERTO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UCParking22\\UCP.App\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj",
       "projectName": "UCP.App.Persistencia",
-      "projectPath": "C:\\UCParking22\\UCP.App\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\samur\\.nuget\\packages\\",
-      "outputPath": "C:\\UCParking22\\UCP.App\\UCP.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\HUMBERTO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\samur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\HUMBERTO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\UCParking22\\UCP.App\\UCP.App.Dominio\\UCP.App.Dominio.csproj": {
-              "projectPath": "C:\\UCParking22\\UCP.App\\UCP.App.Dominio\\UCP.App.Dominio.csproj"
+            "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Dominio\\UCP.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Dominio\\UCP.App.Dominio.csproj"
             }
           }
         }
@@ -7346,7 +7337,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.119\\RuntimeIdentifierGraph.json"
       }
     }
   }
