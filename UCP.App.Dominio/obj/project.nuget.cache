@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uT38cr1gIaMMDIZHGlZ7vLYaKfo7MQZJ5KS+AlnYqaD+Nq3Vg6r2+TD68eVbo7v4djCtFCKfOUOIBGYdUeCksQ==",
+  "success": true,
+  "projectFilePath": "C:\\UCParking22\\UCP.App\\UCP.App.Dominio\\UCP.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samur\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\samur\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
