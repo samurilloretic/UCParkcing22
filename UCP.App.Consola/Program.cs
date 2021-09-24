@@ -10,7 +10,7 @@ namespace UCP.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //CrearProfesor();
+            CrearProfesor();
             //ConsultarProfesor(10000011);
             //EditarProfesor();
             //EliminarProfesor(10000002);
