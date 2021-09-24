@@ -14,7 +14,8 @@ namespace UCP.App.Consola
             //ConsultarProfesor(10000011);
             //EditarProfesor();
             //EliminarProfesor(10000002);
-            ConsultarProfesores();
+            //ConsultarProfesores();
+            ConsultarProfesor();
             /*Estudiante estudiante_1 = new Estudiante{
                 nombre = "Santiago",
                 apellidos = "Murillo",
