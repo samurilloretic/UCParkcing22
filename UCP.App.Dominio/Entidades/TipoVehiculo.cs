@@ -9,6 +9,7 @@ namespace UCP.App.Dominio
         qp,
         camioneta,
         bus,
-        buseta
+        buseta,
+        tren
     }
 }

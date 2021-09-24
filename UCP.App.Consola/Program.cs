@@ -12,10 +12,12 @@ namespace UCP.App.Consola
             Console.WriteLine("Hello World!");
             CrearProfesor();
             //ConsultarProfesor(10000011);
-            //EditarProfesor();
+            EditarProfesor();
             //EliminarProfesor(10000002);
             //ConsultarProfesores();
             ConsultarProfesor();
+
+            Console.WriteLine("Hola esto es una prueba");
             /*Estudiante estudiante_1 = new Estudiante{
                 nombre = "Santiago",
                 apellidos = "Murillo",
