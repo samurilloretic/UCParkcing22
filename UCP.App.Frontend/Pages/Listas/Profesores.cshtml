@@ -10,12 +10,16 @@
             <td>@profesor.nombre</td>
             <td>@profesor.apellidos</td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-profesoridentificacion="@profesor.identificacion">
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-profesorid="@profesor.id">
                 <i class="fas fa-info-circle" aria-hidden="true"></i></a>
             </td>
             <td>
-                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-profesoridentificacion="@profesor.identificacion">
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-profesorid="@profesor.id">
                 <i class="fas fa-address-book" aria-hidden="true"></i></a>
+            </td>
+            <td>
+                <a class="btn btn-danger table-btn" asp-page="./Eliminar" asp-route-profesorid="@profesor.id">
+                <i class="fas fa-book-dead" aria-hidden="true"></i></a>
             </td>
         </tr>
     }

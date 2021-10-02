@@ -13,25 +13,54 @@ namespace UCP.App.Frontend.Pages
 {
     public class EditarModel : PageModel
     {
-        private static IRepositorioProfesor _repoProfesor= new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         [BindProperty]
-        public Profesor profesor{get;set;}
-        public IActionResult OnGet(int profesorIdentificacion)
+        public Profesor profesor { get; set; }
+        public IActionResult OnGet(int? profesorid)
         {
-            //Console.WriteLine(profesorId);
-            profesor = _repoProfesor.GetProfesor(profesorIdentificacion);
-            if (profesor==null)
+            Console.WriteLine(profesorid);
+            if (profesorid.HasValue)
             {
-                return RedirectToPage("./Profesores");            
-            }else
+                profesor = _repoProfesor.GetProfesor(profesorid.Value);
+            }
+            else
+            {
+                profesor = new Profesor();
+            }
+
+            if (profesor == null)
+            {
+                return RedirectToPage("./Profesores");
+            }
+            else
             {
                 return Page();
             }
         }
         public IActionResult OnPost()
         {
-            //Console.WriteLine(profesor.nombre);
-            _repoProfesor.UpdateProfesor(profesor);
+            Console.WriteLine(profesor.identificacion);
+            Console.WriteLine(profesor.id);
+            Console.WriteLine(profesor.telefono);
+            Console.WriteLine(profesor.facultad);
+            Console.WriteLine(profesor.cubiculo);
+            Console.WriteLine(profesor.correoElectronico);
+            Console.WriteLine(profesor.apellidos);
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            else
+            {
+                if (profesor.id > 0)
+                {
+                    _repoProfesor.UpdateProfesor(profesor);
+                }
+                else
+                {
+                    _repoProfesor.AddProfesor(profesor);
+                }
+            }
             return RedirectToPage("./Profesores");
         }
     }

@@ -8,14 +8,17 @@
     <div class="form-group">
         <label asp-for="profesor.nombre"></label>
         <input asp-for="profesor.nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="profesor.nombre"></span>
     </div>
     <div class="form-group">
         <label asp-for="profesor.apellidos"></label>
         <input asp-for="profesor.apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="profesor.apellidos"></span>
     </div>
         <div class="form-group">
         <label asp-for="profesor.identificacion"></label>
         <input asp-for="profesor.identificacion" class="form-control">
+        <span class="text-danger" asp-validation-for="profesor.identificacion"></span>
     </div>
         <div class="form-group">
         <label asp-for="profesor.correoElectronico"></label>

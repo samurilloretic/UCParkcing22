@@ -10,11 +10,11 @@ namespace UCP.App.Persistencia
         //AddProfesor
         Profesor AddProfesor(Profesor profesor);
         //GetProfesor
-        Profesor GetProfesor(int identificacion);
+        Profesor GetProfesor(int profesorid);
         //UpdateProfesor
         Profesor UpdateProfesor(Profesor profesor);
         //DeleteProfesor
-        bool DeleteProfesor(int identificacion);
+        bool DeleteProfesor(int profesorid);
         //GetAllProfesores
         IEnumerable<Profesor> GetAllProfesores();
     }

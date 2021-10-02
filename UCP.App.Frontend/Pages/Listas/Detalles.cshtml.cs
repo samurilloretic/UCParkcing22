@@ -16,9 +16,9 @@ namespace UCP.App.Frontend.Pages
 
         public Profesor profesor{get;set;}
 
-        public IActionResult OnGet(int profesorIdentificacion)
+        public IActionResult OnGet(int profesorid)
         {
-            profesor = _repoProfesor.GetProfesor(profesorIdentificacion);
+            profesor = _repoProfesor.GetProfesor(profesorid);
             if(profesor == null)
             {
                 return RedirectToPage("./Profesores");
