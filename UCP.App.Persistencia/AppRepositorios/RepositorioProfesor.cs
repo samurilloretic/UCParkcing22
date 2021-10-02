@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UCP.App.Dominio;
 using System.Linq;
+using System;
 
 namespace UCP.App.Persistencia
 {
@@ -30,6 +31,7 @@ namespace UCP.App.Persistencia
         //ActualizarProfesor
         Profesor IRepositorioProfesor.UpdateProfesor(Profesor profesor)
         {
+            Console.WriteLine(profesor.nombre);
             var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=>p.identificacion==profesor.identificacion);
             if (profesorEncontrado!=null)
             {

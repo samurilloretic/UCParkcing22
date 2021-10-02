@@ -1,0 +1,24 @@
+﻿@page
+@model UCP.App.Frontend.Pages.ProfesoresModel
+@{
+}
+<h1>Listado Profesores</h1>
+<table class="table">
+    @foreach (var profesor in Model.Profesores)
+    {
+        <tr>
+            <td>@profesor.nombre</td>
+            <td>@profesor.apellidos</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Detalles" asp-route-profesoridentificacion="@profesor.identificacion">
+                <i class="fas fa-info-circle" aria-hidden="true"></i></a>
+            </td>
+            <td>
+                <a class="btn btn-secondary table-btn" asp-page="./Editar" asp-route-profesoridentificacion="@profesor.identificacion">
+                <i class="fas fa-address-book" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+    }
+
+</table>
+<a asp-page=".\Editar" class="btn btn-primary">Adicionar Profesor</a>

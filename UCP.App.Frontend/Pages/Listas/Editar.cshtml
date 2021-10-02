@@ -1,0 +1,37 @@
+﻿@page
+@model UCP.App.Frontend.Pages.EditarModel
+@{
+}
+<h1>Editar Profesor</h1>
+<form method="post">
+    <input type="hidden" asp-for="profesor.id">
+    <div class="form-group">
+        <label asp-for="profesor.nombre"></label>
+        <input asp-for="profesor.nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="profesor.apellidos"></label>
+        <input asp-for="profesor.apellidos" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for="profesor.identificacion"></label>
+        <input asp-for="profesor.identificacion" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for="profesor.correoElectronico"></label>
+        <input asp-for="profesor.correoElectronico" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for="profesor.telefono"></label>
+        <input asp-for="profesor.telefono" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for="profesor.facultad"></label>
+        <input asp-for="profesor.facultad" class="form-control">
+    </div>
+        <div class="form-group">
+        <label asp-for="profesor.cubiculo"></label>
+        <input asp-for="profesor.cubiculo" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
