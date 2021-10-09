@@ -2,12 +2,15 @@
 using UCP.App.Dominio;
 using UCP.App.Persistencia;
 using System.Collections.Generic;
+using System.Globalization;
+
 namespace UCP.App.Consola
 {
     class Program
     {
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
+        private static IRepositorioParqueadero _repoParqueadero = new RepositorioParqueadero(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -36,8 +39,12 @@ namespace UCP.App.Consola
             };
             AgregarVehiculoProfesor(vehiculonuevo1,vehiculonuevo2,8);
             */
-            Vehiculo vehiculoEncontrado = _repoVehiculo.GetVehiculo(1);
-            AgregarVehiculoProfesor(vehiculoEncontrado,null,2);
+            /*Vehiculo vehiculoEncontrado = _repoVehiculo.GetVehiculo(1);
+            AgregarVehiculoProfesor(vehiculoEncontrado,null,2);*/
+            //Vehiculo nuevoVehiculo = _repoVehiculo.GetVehiculo(1);
+            //AgregarParqueadero();
+            Persona personaEncontrada = ConsultarProfesor(7);
+            EditarParqueadero(3,personaEncontrada);
         }
         //CRUD
         //CrearProfesor
@@ -144,6 +151,63 @@ namespace UCP.App.Consola
             return _repoProfesor.GetProfesorVehiculo(idProfesor);
         }
 
+        private static Parqueadero AgregarParqueadero()
+        {            
+            var parqueaderoCreado = new Parqueadero 
+            {
+                direccion="Carrera 10 #23 - 18",
+                horario = "Lunes a Sábado 8 a 20",
+                picoPlaca = "3",
+                cantidadPuestos = 50,
+                puestos = new List<Puesto> {
+                    new Puesto{
+                        tipoVehiculo =TipoVehiculo.camioneta,
+                        estado = Estado.ocupado,
+                        numero = 1,
+                        vehiculo = new Vehiculo {
+                            placa = "POR342",
+                            marca = "Mazda",
+                            modelo ="CX-5",
+                            tipoVehiculo = TipoVehiculo.camioneta
+                        }
+                    },
+                    new Puesto{
+                        tipoVehiculo =TipoVehiculo.automovil,
+                        estado = Estado.ocupado,
+                        numero = 2,
+                        vehiculo = new Vehiculo {
+                            placa = "ATM987",
+                            marca = "Renault",
+                            modelo ="Sandero",
+                            tipoVehiculo = TipoVehiculo.automovil
+                        }
+                    },
+                    new Puesto{
+                        tipoVehiculo =TipoVehiculo.automovil,
+                        estado = Estado.libre,
+                        numero = 3,
+                        vehiculo = null
+                    }
+                },
+                transacciones = null,
+                personas = null
+            };
+            return _repoParqueadero.AddParqueadero(parqueaderoCreado);
+        }
 
+        private static Parqueadero EditarParqueadero(int idParqueadero,Persona persona)
+        {
+            var parqueaderoEncontrado = _repoParqueadero.GetParqueadero(idParqueadero);
+            if (parqueaderoEncontrado.personas == null){
+                parqueaderoEncontrado.personas = new List<Persona>();
+                parqueaderoEncontrado.personas.Add(persona);
+                Console.WriteLine("Se va a crear la lista");
+            }else
+            {
+                parqueaderoEncontrado.personas.Add(persona);
+                Console.WriteLine("La lista ya existe");
+            }
+            return _repoParqueadero.UpdateParqueadero(parqueaderoEncontrado);
+        }
     }
 }
