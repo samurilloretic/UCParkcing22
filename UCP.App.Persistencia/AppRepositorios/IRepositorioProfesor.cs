@@ -17,6 +17,9 @@ namespace UCP.App.Persistencia
         bool DeleteProfesor(int profesorid);
         //GetAllProfesores
         IEnumerable<Profesor> GetAllProfesores();
+
+        //GetProfesorVehiculo
+        Profesor GetProfesorVehiculo(int idProfesor);
     }
     
 }

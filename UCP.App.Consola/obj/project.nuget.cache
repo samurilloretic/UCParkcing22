@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dn/zgU5FEmUNwSrEdBtWfHmC+snHTw7qJMsjXOArvXDlc3Msjx2CcqfxzAjxaDxt4ba6Bj0NNX0E8pr6Yb7c/w==",
+  "dgSpecHash": "W+r+P3jbvLqkaKi7e8diCzHrh6BLE+3ZAUtODA5DQDUpRzOH5MK+gqlR98plyyi/oqs0Atc23Ld7F/PsQ9QT9Q==",
   "success": true,
   "projectFilePath": "C:\\UCParking22\\UCP.App\\UCP.App.Consola\\UCP.App.Consola.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.10\\microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\samur\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",

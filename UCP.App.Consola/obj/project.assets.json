@@ -116,7 +116,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.10": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -1512,6 +1512,9 @@
       "UCP.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/UCP.App.Dominio.dll": {}
         },
@@ -1524,6 +1527,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
           "UCP.App.Dominio": "1.0.0"
         },
@@ -1731,17 +1735,17 @@
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {
-      "sha512": "l1c/1ge8ymXgLqtstTyX3PZOLRuFo1jn0FQ9H4ag3Bwz70KTMyEOXwkKBZZ1gDlCibETrooflMis8wvvXFh5YQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.10": {
+      "sha512": "MBnG+g6jrmK72y4rU+4y2btHrl72i2q3zrXG3pj2zZGXXrG9Q4SlwL5ul0ASmQXYjhJ4VpDfd4o1/gdRPsa2jA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.0",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -5797,34 +5801,43 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HUMBERTO\\.nuget\\packages\\": {}
+    "C:\\Users\\samur\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Consola\\UCP.App.Consola.csproj",
+      "projectUniqueName": "C:\\UCParking22\\UCP.App\\UCP.App.Consola\\UCP.App.Consola.csproj",
       "projectName": "UCP.App.Consola",
-      "projectPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Consola\\UCP.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\HUMBERTO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Consola\\obj\\",
+      "projectPath": "C:\\UCParking22\\UCP.App\\UCP.App.Consola\\UCP.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\samur\\.nuget\\packages\\",
+      "outputPath": "C:\\UCParking22\\UCP.App\\UCP.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HUMBERTO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\samur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Dominio\\UCP.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Dominio\\UCP.App.Dominio.csproj"
+            "C:\\UCParking22\\UCP.App\\UCP.App.Dominio\\UCP.App.Dominio.csproj": {
+              "projectPath": "C:\\UCParking22\\UCP.App\\UCP.App.Dominio\\UCP.App.Dominio.csproj"
             },
-            "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\HUMBERTO\\Documents\\Daniel´s Documents\\MISION TIC 2022\\Desarrollo software\\UCParking\\UCParkcing22\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj"
+            "C:\\UCParking22\\UCP.App\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj": {
+              "projectPath": "C:\\UCParking22\\UCP.App\\UCP.App.Persistencia\\UCP.App.Persistencia.csproj"
             }
           }
         }
@@ -5860,7 +5873,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.119\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

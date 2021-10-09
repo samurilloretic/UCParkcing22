@@ -13,7 +13,7 @@ namespace UCP.App.Persistencia
 
         public DbSet<Visitante> Visitantes{get;set;} //repertirse por cada entidad
 
-        public DbSet<Parqueadero> Parquaderos{get;set;} //repertirse por cada entidad
+        public DbSet<Parqueadero> Parqueaderos{get;set;} //repertirse por cada entidad
         
         public DbSet<Puesto> Puestos{get;set;} //repertirse por cada entidad
         

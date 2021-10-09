@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UCP.App.Dominio;
 using System.Linq;
 using System;
-
+using Microsoft.EntityFrameworkCore;
 namespace UCP.App.Persistencia
 {
     public class RepositorioProfesor : IRepositorioProfesor
@@ -32,7 +32,7 @@ namespace UCP.App.Persistencia
         Profesor IRepositorioProfesor.UpdateProfesor(Profesor profesor)
         {
             Console.WriteLine(profesor.nombre);
-            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=>p.identificacion==profesor.identificacion);
+            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p=>p.id==profesor.id);
             if (profesorEncontrado!=null)
             {
                 profesorEncontrado.nombre = profesor.nombre;
@@ -65,6 +65,11 @@ namespace UCP.App.Persistencia
         IEnumerable<Profesor> IRepositorioProfesor.GetAllProfesores()
         {
             return _appContext.Profesores;
+        }
+
+        Profesor IRepositorioProfesor.GetProfesorVehiculo(int idProfesor)
+        {
+            return _appContext.Profesores.Include(p=>p.vehiculo_1).Include(p=>p.vehiculo_2).SingleOrDefault(p=>p.id==idProfesor);
         }
 
     }

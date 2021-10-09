@@ -7,30 +7,37 @@ namespace UCP.App.Consola
     class Program
     {
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            CrearProfesor();
-            //ConsultarProfesor(10000011);
-            EditarProfesor();
-            //EliminarProfesor(10000002);
+            //CrearProfesor();            
+            /*Profesor profesorConsultado = ConsultarProfesorVehiculo(8);
+            Console.WriteLine(profesorConsultado.nombre);
+            Console.WriteLine(profesorConsultado.apellidos);
+            Console.WriteLine(profesorConsultado.vehiculo_2);//error
+            Console.WriteLine(profesorConsultado.vehiculo_2.marca);//error
+*/
+
+            //EditarProfesor(5);
+            //EliminarProfesor(5);
             //ConsultarProfesores();
-            ConsultarProfesor();
-
-            Console.WriteLine("Hola esto es una prueba");
-            /*Estudiante estudiante_1 = new Estudiante{
-                nombre = "Santiago",
-                apellidos = "Murillo",
-                identificacion = 10000000,
-                correoElectronico = "santiagomurillo.tic@ucaldas.edu.co",
-                telefono = "30000000",
-                vehiculo_1 = vehiculo_eje_1,
-                vehiculo_2 = null,
-                programa = "Ingeniería de Sistemas"
-            } ;
-
-            Console.WriteLine(estudiante_1.nombre + "  " +estudiante_1.apellidos+"\n"+estudiante_1.telefono+"\n"+estudiante_1.vehiculo_1.placa);
+            /*Vehiculo vehiculonuevo1 = new Vehiculo{
+                marca = "Audi",
+                modelo = "A4",
+                placa = "ARZ142",
+                tipoVehiculo = TipoVehiculo.automovil
+            };
+            Vehiculo vehiculonuevo2 = new Vehiculo{
+                marca = "Fiat",
+                modelo = "Palio",
+                placa = "ART321",
+                tipoVehiculo = TipoVehiculo.automovil
+            };
+            AgregarVehiculoProfesor(vehiculonuevo1,vehiculonuevo2,8);
             */
+            Vehiculo vehiculoEncontrado = _repoVehiculo.GetVehiculo(1);
+            AgregarVehiculoProfesor(vehiculoEncontrado,null,2);
         }
         //CRUD
         //CrearProfesor
@@ -38,22 +45,22 @@ namespace UCP.App.Consola
         {
 
             Vehiculo vehiculo_eje_1 = new Vehiculo{
-                marca = "Renault",
-                modelo = "2012",
-                placa = "AAA111",
+                marca = "Mazda",
+                modelo = "Cx-30",
+                placa = "ABA911",
                 tipoVehiculo = TipoVehiculo.automovil
             };
 
             var profesor = new Profesor{
-                nombre = "Santiago",
-                apellidos = "Murillo",
-                identificacion = 10000000,
-                correoElectronico = "santiagomurillo.tic@ucaldas.edu.co",
-                telefono = "30000000",
-                vehiculo_1 = null,
+                nombre = "Camilo",
+                apellidos = "Suarez",
+                identificacion = 10101010,
+                correoElectronico = "camilosuarez.tic@ucaldas.edu.co",
+                telefono = "30101010",
+                vehiculo_1 = vehiculo_eje_1,
                 vehiculo_2 = null,
                 facultad = "Ingeniería",
-                cubiculo = "4"
+                cubiculo = "1"
             };
             Profesor profesorGuardado=_repoProfesor.AddProfesor(profesor);
             if (profesorGuardado!=null)
@@ -64,29 +71,34 @@ namespace UCP.App.Consola
                 }
         }
         //ConsultarProfesor
-        private static void ConsultarProfesor(int identificacion)
+        private static Profesor ConsultarProfesor(int idProfesor)
         {
-            Profesor profesorEncontrado = _repoProfesor.GetProfesor(identificacion);
+            Profesor profesorEncontrado = _repoProfesor.GetProfesor(idProfesor);
             if (profesorEncontrado!=null)
+            {
                 Console.WriteLine(profesorEncontrado.nombre);
+                return profesorEncontrado;
+            }
             else
             {
                 Console.WriteLine("Profesor no encontrado");
-            }
+                return null;
+            }            
         }
         //EditarProfesor
-        private static void EditarProfesor()
+        private static void EditarProfesor(int idProfesor)
         {
             var profesor = new Profesor{
-                nombre = "Felipe",
-                apellidos = "Muñoz",
-                identificacion = 10000020,
-                correoElectronico = "felipemuñoz.tic@ucaldas.edu.co",
-                telefono = "30000001",
+                id = idProfesor,
+                nombre = "Santiago",
+                apellidos = "Rendon",
+                identificacion = 10200020,
+                correoElectronico = "santiagorendon.tic@ucaldas.edu.co",
+                telefono = "30200001",
                 vehiculo_1 = null,
                 vehiculo_2 = null,
-                facultad = "Derecho",
-                cubiculo = "4"
+                facultad = "Ingeniería",
+                cubiculo = "8"
             };
             var profesorActualizado = _repoProfesor.UpdateProfesor(profesor);
             if (profesorActualizado!=null)
@@ -99,9 +111,9 @@ namespace UCP.App.Consola
 
         }
         //EliminarProfesor
-        private static void EliminarProfesor(int identificacion)
+        private static void EliminarProfesor(int id)
         {
-            if(_repoProfesor.DeleteProfesor(identificacion))
+            if(_repoProfesor.DeleteProfesor(id))
                 Console.WriteLine("Profesor Eliminado");
             else
             {
@@ -118,6 +130,20 @@ namespace UCP.App.Consola
                 Console.WriteLine(profesor.nombre + "  " + profesor.apellidos+ "  " + profesor.facultad);
             }
         }
+
+        private static void AgregarVehiculoProfesor(Vehiculo vehiculo1,Vehiculo vehiculo2,int idProfesor)
+        {
+            Profesor profesorEncontrado = _repoProfesor.GetProfesor(idProfesor);
+            profesorEncontrado.vehiculo_1 = vehiculo1;
+            profesorEncontrado.vehiculo_2 = vehiculo2;
+            _repoProfesor.UpdateProfesor(profesorEncontrado);
+        }
+
+        private static Profesor ConsultarProfesorVehiculo(int idProfesor)
+        {
+            return _repoProfesor.GetProfesorVehiculo(idProfesor);
+        }
+
 
     }
 }
