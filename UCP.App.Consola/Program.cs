@@ -43,8 +43,20 @@ namespace UCP.App.Consola
             AgregarVehiculoProfesor(vehiculoEncontrado,null,2);*/
             //Vehiculo nuevoVehiculo = _repoVehiculo.GetVehiculo(1);
             //AgregarParqueadero();
-            Persona personaEncontrada = ConsultarProfesor(7);
-            EditarParqueadero(3,personaEncontrada);
+            Persona personaEncontrada = ConsultarProfesor(10);
+
+            Puesto nuevoPuesto = new Puesto{
+                        tipoVehiculo =TipoVehiculo.automovil,
+                        estado = Estado.ocupado,
+                        numero = 4,
+                        vehiculo = _repoVehiculo.GetVehiculo(5)
+                        };
+            Transaccion nuevaTransaccion = new Transaccion{
+                horaIngreso = new DateTime(2021,10,08,10,30,25),
+                horaSalida = new DateTime(2021,10,08,12,30,25),
+                tarifaHora = 2500
+            };
+            EditarParqueadero(1,personaEncontrada,nuevoPuesto, nuevaTransaccion);
         }
         //CRUD
         //CrearProfesor
@@ -195,7 +207,7 @@ namespace UCP.App.Consola
             return _repoParqueadero.AddParqueadero(parqueaderoCreado);
         }
 
-        private static Parqueadero EditarParqueadero(int idParqueadero,Persona persona)
+        private static Parqueadero EditarParqueadero(int idParqueadero,Persona persona,Puesto puesto,Transaccion transaccion)
         {
             var parqueaderoEncontrado = _repoParqueadero.GetParqueadero(idParqueadero);
             if (parqueaderoEncontrado.personas == null){
@@ -206,6 +218,22 @@ namespace UCP.App.Consola
             {
                 parqueaderoEncontrado.personas.Add(persona);
                 Console.WriteLine("La lista ya existe");
+            }
+            if (parqueaderoEncontrado.puestos==null)
+            {
+                parqueaderoEncontrado.puestos = new List<Puesto>();
+                parqueaderoEncontrado.puestos.Add(puesto);
+            }else
+            {
+                parqueaderoEncontrado.puestos.Add(puesto);
+            }
+            if(parqueaderoEncontrado.transacciones == null)
+            {
+                parqueaderoEncontrado.transacciones = new List<Transaccion>();
+                parqueaderoEncontrado.transacciones.Add(transaccion);
+            }else
+            {
+                parqueaderoEncontrado.transacciones.Add(transaccion);
             }
             return _repoParqueadero.UpdateParqueadero(parqueaderoEncontrado);
         }
